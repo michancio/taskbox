@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
-  return (
+  return (    
     <div className={`list-item ${state}`}>
       <label className="checkbox">
         <input
@@ -19,7 +19,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
             value={title} 
             readOnly={true} 
             placeholder="Input title" 
-            style={{ background: 'red'}}
+//            style={{ background: 'red'}}
             />
       </div>
 
