@@ -16,14 +16,14 @@ Default.args = {
     id: '1',
     title: 'Test Task',
     state: 'TASK_INBOX',
-    updatedAt: new Date(2018, 0, 1, 9, 0),
+    updatedAt: new Date(2019, 0, 1, 9, 0),
   },
 };
 
 Default.parameters = {
    design: {
      type: 'figma',
-     url: 'https://www.figma.com/file/jBqVmgmvfCzQk7OZG5rQd6/akademia?node-id=23%3A13',
+     url: 'https://www.figma.com/file/BPI2wNqvQI59Wr7hsmVZ8X/Figma-API?node-id=11%3A3',
    },
  };
 
@@ -33,6 +33,13 @@ Pinned.args = {
     ...Default.args.task,
     state: 'TASK_PINNED',
     title: 'Test Task (pinned)'
+  },
+};
+
+Pinned.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/BPI2wNqvQI59Wr7hsmVZ8X/Figma-API?node-id=11%3A24',
   },
 };
 
