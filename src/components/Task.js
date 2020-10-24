@@ -21,15 +21,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
             placeholder="Input title" 
 //            style={{ background: 'red'}}
             />
-      </div> 
-      <label className="checkbox">
-        <input
-          type="checkbox"          
-          disabled={true}
-          name="checked"
-        />
-        <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
-      </label>                               
+      </div>                            
       <div className="actions" onClick={event => event.stopPropagation()}>
         {state !== 'TASK_ARCHIVED' && (
           // eslint-disable-next-line jsx-a11y/anchor-is-valid
