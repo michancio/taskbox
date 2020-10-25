@@ -6,7 +6,7 @@ export default {
   component: Task,
   title: 'Task',
   decorators: [withDesign]
-};
+}; 
 
 const Template = args => <Task {...args} />;
 
@@ -19,13 +19,13 @@ Default.args = {
     updatedAt: new Date(2019, 0, 1, 9, 0),
   },
 };
-
 Default.parameters = {
-   design: {
-     type: 'figma',
-     url: 'https://www.figma.com/file/BPI2wNqvQI59Wr7hsmVZ8X/Figma-API?node-id=11%3A3',
-   },
- };
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/BPI2wNqvQI59Wr7hsmVZ8X/Figma-API?node-id=11%3A3'
+  }
+}
+
 
 export const Pinned = Template.bind({});
 Pinned.args = {
@@ -35,11 +35,10 @@ Pinned.args = {
     title: 'Test Task (pinned)'
   },
 };
-
 Pinned.parameters = {
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/BPI2wNqvQI59Wr7hsmVZ8X/Figma-API?node-id=11%3A24',
+    url: 'https://www.figma.com/file/BPI2wNqvQI59Wr7hsmVZ8X/Figma-API?node-id=11%3A24'
   },
 };
 
